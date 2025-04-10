@@ -13,12 +13,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Use Node.js
+    - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: 22.x
 
-    - name: Build
+    - name: Build Website
       run: |
         npm install
         npx webpack
